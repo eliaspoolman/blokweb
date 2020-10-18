@@ -1,7 +1,28 @@
 @font-face {
   font-family: 'sohne';
-  src: url('fonts/sohne/soehne-test-buch.woff') format('woff');
+  src: url('https://eliaspoolman.github.io/blokweb/fonts/sohne/soehne-300.woff') format('woff'); 
+  font-weight: 300;
 }
+
+@font-face {
+  font-family: 'sohne';
+  src: url('https://eliaspoolman.github.io/blokweb/fonts/sohne/soehne-400.woff') format('woff'); 
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'sohne';
+  src: url('https://eliaspoolman.github.io/blokweb/fonts/sohne/soehne-500.woff') format('woff'); 
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'sohne';
+  src: url('https://eliaspoolman.github.io/blokweb/fonts/sohne/soehne-600.woff') format('woff'); 
+  font-weight: 600;
+}
+
+
 
 /* CSS Document */
 *, *::after, *::before {
@@ -53,7 +74,7 @@ header::before {
     transform: rotate(-11deg);
     
     /* Bron: https://www.w3schools.com/cssref/pr_background-image.asp */
-    background-image: url("/../images/hero-background.png");
+    background-image: url("https://eliaspoolman.github.io/blokweb/images/hero-background.png");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain;
@@ -546,7 +567,7 @@ section:nth-of-type(7) container::before {
     z-index:-1;
     
     /* Bron: https://www.w3schools.com/cssref/pr_background-image.asp */
-    background-image: url("/../images/earth.png");
+    background-image: url("https://eliaspoolman.github.io/blokweb/images/earth.png");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain;
