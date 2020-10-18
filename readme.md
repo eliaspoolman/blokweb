@@ -1,14 +1,12 @@
 # Procesverslag
-**Auteur:** Elias Poolman
+**Auteur:** -jouw naam-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.sitepoint.com/css3-transform-background-image/
 
 
 
@@ -24,13 +22,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
 
+Nog steeds even ver als bij het eerste voortgangsgesprek.
+
+### Verslag van meeting
+
+In het gesprek kregen we een paar tips voor de eindversie. 
+
+1. Vergeet geen mediaqueries toe te voegen
+2. Voldoe aan alle voorwaarden van de opdracht
+3. Gebruik semantische elementen
+4. Zet overal goede bijschriften bij
+5. Zorg dat de site toegankelijk is voor screenreader (kan je tabben over de pagina? Veranderd een knop na klikken van kleur?)
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Niet aanwezig
 
 
 
@@ -38,46 +47,31 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Het ontleden van de website in de verschillende elementen was goed te doen. Vervolgens het skelet van de HTML aangemaakt.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
-
-### Agenda voor meeting
-
--samen met je groepje opstellen-
+![Huidige versie site](images/screenshot-voortgang1.png)
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Goed basis begin gemaakt van de website, maar nog veel te doen voor de opmaak!
 
 
 
 ## Intake (week 1)
 
-**Je startniveau:** rode piste
+**Je startniveau:** -kies uit zwart, rood óf blauw-
 
-**Je focus:** responsive plane
+**Je focus:** -kies uit responsive óf surface plane-
 
-**Je opdracht:** www.stripe.com
+**Je opdracht:** [Stripe](https://stripe.com/en-nl "Stripe Homepage")
+
 
 **Screenshot(s):**
 
-**Home**
-
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/screenshot-stripe.png)
-
-**About**
-
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/screenshot-stripe-about.png)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
 
 **Breakdown-schets(en):**
 
-**Home**
-
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown-home.png)
-
-**About**
-
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown-about.png)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)

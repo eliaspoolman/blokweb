@@ -1,5 +1,547 @@
+@font-face {
+  font-family: 'sohne';
+  src: url('fonts/sohne/soehne-test-buch.woff') format('woff');
+}
+
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+}
+
+body {
+    font-family: "sohne","Helvetica Neue","Arial",sans-serif;
+    margin: 1em 0em;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 3.5vw 93vw 3.5vw;
+    position: absolute;
+    
+    /* Bron: https://medium.com/better-programming/improving-font-rendering-with-css-3383fc358cbc*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    border-left: 0.5px solid #eee;
+    border-right: 0.5px solid #eee;
+    z-index: 5;
+}
+
+/* Opmaak van de header */
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px 5px 20px ;
+}
+
+
+/* Vormgeving van de schuine achtergrond 
+   Bron: https://www.sitepoint.com/css3-transform-background-image/ */
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 635%;
+    top: -150%;
+    left: -52.5%;   
+    z-index: -1;
+    background-color: red;
+    transform: rotate(-11deg);
+    
+    /* Bron: https://www.w3schools.com/cssref/pr_background-image.asp */
+    background-image: url("/images/hero-background.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+}
+
+/* Opmaak van het logo */
+
+header > a > img {
+    width: 60px;
+}
+
+/* Opmaak van het menu-icoontje */
+
+header nav {
+    /* doorzichtig grijze achtergrondkleur van knop */
+    background-color: hsla(0,0%,100%,0.2);
+    
+    /* rond maken van de menu-knop */
+    border-radius: 20px; 
+    padding: 10px 15px;
+    margin: 8px;
+    
+    /* positioneren van menu-icoontje */
+    display: flex;
+    align-items: center;
+}
+
+/* hover effect menu knopje */
+
+header nav:hover {
+    background-color: hsla(0,0%,100%,0.4);
+}
+
+
+/* instelling voor de afbeelding van de menu-knop */
+header nav img {
+    width: 15px;
+}
+
+/* ##############################################
+
+    Opmaak van de sectie: Payment infrastructure for the internet
+
+   ##############################################
+*/
+
+body > main > section:first-of-type {
+    margin-left: 20px;
+}
+
+/* Opmaak van de h1 */
+
+body > main > section h1:first-of-type {
+    margin-top: 1.7em;
+    font-size: 65px;
+    margin-bottom: 0.5em;
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
+/* Opmaak van de eerste alinea met tekst */
+body > main > section p {
+    font-size: 18px;
+    color: #425466;
+    line-height: 1.5;
+}
+
+body > main > section:first-of-type p:first-of-type {
+    margin-bottom: 30px;
+}
+
+/* Opmaak van de call to action knoppen */
+
+body > main > section article {
+    display: flex;
+}
+
+body > main > section article:first-of-type div {
+    padding: 8px 15px;
+}
+
+body > main > section article:first-of-type div:first-of-type {
+    background-color: #0A2450;
+    border-radius: 20px;
+}
+
+/* knop vaag maken bij hoveren */
+body > main > section article div:hover {
+    opacity: 0.6;
+}
+
+body > main > section article div:first-of-type a {
+    color: white;
+}
+
+body > main > section article div:nth-of-type(2) a {
+    color: #0A2450;
+}
+
+body > main > section article div a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Opmaak van het logo grid */
+body > main > section:nth-of-type(2) ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 25px;
+}
+
+/* Centreer het logo in het midden van zijn vakje */
+body > main > section:nth-of-type(2) ul li {
+    justify-self: center;
+}
+
+/* ##############################################
+
+    Opmaak van de sectie: Unified platform
+
+   ##############################################
+*/
+body > main > section:nth-of-type(3) {
+    background-color: #f6f9fc;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h4:first-of-type {
+    color: #635BFF;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+body > main > section:nth-of-type(3) p {
+    margin-bottom: 33px;
+}
+
+body > main > section:nth-of-type(3) p a {
+    color: #635BFF;
+    font-weight: 500;
+}
+
+body > main > section:nth-of-type(3) p a:hover {
+    color: black;
+}
+
+body > main > section:nth-of-type(3) article div {
+    background-color: #635BFF;
+}
+
+
+/* Banner met vier afbeeldingen vormgeven in een grid */
+body > main > section:nth-of-type(4) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    background-color: #f6f9fc;
+}
+
+body > main > section:nth-of-type(4) img {
+    margin-bottom: 25px;
+    margin-right: 25px;
+    border-radius: 10px;
+    /* gegenereerd op https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+}
+
+/* randen van afbeelding linksonder */
+
+body > main > section:nth-of-type(4) aside:first-of-type img:nth-of-type(2) {
+    border-radius: 50px 50px 0px 0px;
+    margin-bottom: 0px;
+}
+
+body > main > section:nth-of-type(4) aside:last-of-type img:nth-of-type(2) {
+    margin-bottom: 0px;
+}
+
+
+/* ##############################################
+
+    Opmaak van de sectie: Designed for developers
+
+   ##############################################
+*/
+body > main > section:nth-of-type(5) {
+    position: relative;
+    margin-bottom: 830px;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+}
+
+/* Het grote blauwe schuine achtergrondvlak */
+
+body > main > section:nth-of-type(5) container::before {
+    content: "";
+    position: absolute;
+    width: 230%;
+    height: 110%;
+    top: -2.5%;
+    left: -40%;
+    z-index:-1;
+    background-color: #0a2540;
+    transform: rotate(-6deg);
+}
+
+/* De tekst boven de achtergrond plaatsen */ 
+body > main > section:nth-of-type(5) container {
+    z-index: 5;
+    position: absolute;
+    padding-top: 80px;
+}
+
+/* Opmaak h4, h2 en p in deze sectie */
+
+body > main > section:nth-of-type(5) container h4 {
+    color: #00D4FF;
+}
+
+body > main > section:nth-of-type(5) container h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+body > main > section:nth-of-type(5) container p {
+    color: #adbdcc;
+}
+
+/* Opmaak knop */
+body > main > section:nth-of-type(5) container article:first-of-type div{
+    background-color: #00D4FF;
+    margin-top: 5px;
+}
+
+body > main > section:nth-of-type(5) container article:first-of-type div:hover {
+    opacity: 1;
+    background-color: white;
+}
+
+body > main > section:nth-of-type(5) container article:first-of-type div a {
+    color: #0a2540;
+}
+
+/* Opmaak van de twee specificaties in deze sectie */
+
+body > main > section:nth-of-type(5) container article:nth-of-type(2),
+body > main > section:nth-of-type(5) container article:nth-of-type(3){
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+body > main > section:nth-of-type(5) container article:nth-of-type(2) img,
+body > main > section:nth-of-type(5) container article:nth-of-type(3) img{
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+/* Vormgeving h6 met blauwe lijn links */
+
+body > main > section:nth-of-type(5) container h6 {
+    color: white;
+    font-size: 15px;
+    margin: 10px 0px;
+    border-left: solid #00D4FF 1px;
+    padding-left: 15px;
+    position: relative;
+    left: -3.5vw;
+    
+}
+
+body > main > section:nth-of-type(5) container article p {
+    margin-top: 0px;
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+/* Vormgeving van link */
+
+body > main > section:nth-of-type(5) container article:nth-of-type(2) a,
+body > main > section:nth-of-type(5) container article:nth-of-type(3) a {
+    color: #00D4FF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px
+}
+
+body > main > section:nth-of-type(5) container article:nth-of-type(2) a:hover,
+body > main > section:nth-of-type(5) container article:nth-of-type(3) a:hover {
+    color: white;
+}
+
+/* ##############################################
+
+    Opmaak van de code editor
+
+   ##############################################
+*/
+
+
+body > main > section:nth-of-type(5) container article:nth-of-type(4) {
+    display: flex;
+    background-color: #0D2E4F;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+body > main > section:nth-of-type(5) container article:nth-of-type(4) ul,
+body > main > section:nth-of-type(5) container article:nth-of-type(6) ul{
+    list-style-type: none;
+    padding-left: 0px;
+    color: white;
+}
+
+body > main > section:nth-of-type(5) container article:nth-of-type(4) main {
+    border: none;
+}
+
+body > main > section:nth-of-type(5) container article:nth-of-type(4) aside ul {
+    color: #55718D;
+}
+
+body > main > section:nth-of-type(5) container article:nth-of-type(4) aside,
+body > main > section:nth-of-type(5) container article:nth-of-type(4) main,
+body > main > section:nth-of-type(5) container article:nth-of-type(6) {
+    padding: 0px 0px 0px 25px;
+    line-height: 1.6;
+    font-family: 'courier';
+    font-size: 15px;
+}
+
+body > main > section:nth-of-type(5) container article:nth-of-type(4) main ul li:nth-of-type(4),
+body > main > section:nth-of-type(5) container article:nth-of-type(4) main ul li:nth-of-type(5) {
+    margin-left: 17px
+}
+
+/* De kleuren van de code */
+
+.orange {
+    color: #FFA956;
+}
+
+.purple {
+    color: #8095FF;
+}
+
+.blue {
+    color: #00D4FF;
+}
+
+.yellow {
+    color: #FFD96A;
+}
+
+.grey {
+    color: #55718D;
+}
+
+.purple-background {
+    background-color: #8095FF;
+    color: #0a2540;
+    padding: 5px;
+}
+
+
+/* Opmaak van het tussenstukje tekst */
+body > main > section:nth-of-type(5) container article:nth-of-type(5) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'courier';
+}
+
+body > main > section:nth-of-type(5) container article:nth-of-type(5) p {
+    background-color: none;
+    line-height: 1;
+    margin-bottom: 0px;
+    padding: 6px 6px 6px 0px;
+}
+
+/* Opmaak van de tweede code editor */
+
+body > main > section:nth-of-type(5) container article:nth-of-type(6) {
+    background-color: #06182c;
+    border: 1px solid #0D2E4F;
+    border-radius: 10px;
+}
+
+body > main > section:nth-of-type(5) container article:nth-of-type(6) main {
+    border: none;
+}
+
+/* ##############################################
+
+    Opmaak van de sectie: Why Stripe
+
+   ##############################################
+*/
+
+/* ##############################################
+
+    Opmaak van de sectie: Global Scale
+
+   ##############################################
+*/
+
+/* ##############################################
+
+    Opmaak van de sectie: Ready to get started?
+
+   ##############################################
+*/
+
+/* ##############################################
+
+    Opmaak van de sectie: Footer
+
+   ##############################################
+*/
+
+footer {
+    position: relative;
+        padding-left: 25px;
+
+}
+
+footer img {
+    width: 80px;
+}
+
+footer container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 65vh;
+}
+
+footer container::before {
+    content: "";
+    position: absolute;
+    width: 230%;
+    height: 110%;
+    top: -2.5%;
+    left: -40%;
+    z-index:-1;
+    background-color: #f6f9fc;
+    transform: rotate(-6deg);
+}
+
+footer > section:first-of-type {
+    display: block;
+    padding-top: 100px;
+    flex-direction: column;
+    
+}
+
+footer > container > section {
+    color: #0A2540;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+footer h6 {
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 10px;
 }
 
