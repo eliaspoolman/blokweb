@@ -783,7 +783,7 @@ footer container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 85vh;
+    height: 750px;
 }
 
 footer container::before {
