@@ -578,6 +578,7 @@ section:nth-of-type(7) container::before {
     position: absolute;
     width: 100vw;
     height: 120vh;
+    max-height: 900px;
     top: -2%;
     left: -8%;
     z-index:-1;
@@ -826,6 +827,10 @@ footer > container > article {
     color: #0A2540;
     font-size: 15px;
     line-height: 1.8;
+}
+
+footer > container > article:first-of-type {
+    padding-right: 50px;
 }
 
 footer h6 {
