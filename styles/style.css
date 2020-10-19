@@ -406,7 +406,7 @@ section:nth-of-type(5) container article:nth-of-type(4) {
     margin-top: 35px;
     margin-left: -10px;
     width: 100%;
-    overflow-x: scroll;
+/*    overflow-x: scroll;*/
 }
 
 section:nth-of-type(5) container article:nth-of-type(4) ul,
@@ -576,10 +576,10 @@ section:nth-of-type(7) {
 section:nth-of-type(7) container::before {
     content: "";
     position: absolute;
-    width: 230%;
-    height: 110%;
-    top: -6.5%;
-    right: -63%;
+    width: 100vw;
+    height: 120vh;
+    top: -15.5%;
+    left: -8%;
     z-index:-1;
     
     /* Bron: https://www.w3schools.com/cssref/pr_background-image.asp */
@@ -611,6 +611,11 @@ section:nth-of-type(7) container p {
     color: #adbdcc;
 }
 
+section:nth-of-type(7) container a {
+    color: #00D4FF;
+    font-weight: 500;
+}
+
 /* Opmaak knop */
 section:nth-of-type(7) container article:first-of-type div{
     background-color: #00D4FF;
@@ -628,12 +633,6 @@ section:nth-of-type(7) container article:first-of-type div a {
 
 /* Opmaak van de twee specificaties in deze sectie */
 
-section:nth-of-type(7) container article:nth-of-type(2),
-section:nth-of-type(7) container article:nth-of-type(3){
-    display: flex;
-    flex-direction: column;
-    margin-top: 35px;
-}
 
 section:nth-of-type(7) container article:nth-of-type(2) img,
 section:nth-of-type(7) container article:nth-of-type(3) img{
@@ -641,17 +640,21 @@ section:nth-of-type(7) container article:nth-of-type(3) img{
     margin-bottom: 10px;
 }
 
-/* Vormgeving h6 met blauwe lijn links */
+/* Vormgeving h3 met blauwe lijn links */
 
-section:nth-of-type(7) container h6 {
+section:nth-of-type(7) container article {
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-of-type(7) container h3 {
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     margin: 10px 0px;
     border-left: solid #00D4FF 1px;
     padding-left: 15px;
     position: relative;
-    left: -3.5vw;
-    
+    left: -3.5vw;    
 }
 
 section:nth-of-type(7) container article p {
@@ -667,6 +670,96 @@ section:nth-of-type(7) container article p {
 
    ##############################################
 */
+
+section:nth-of-type(8) {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+/* Opmaak van de twee specificaties in deze sectie */
+
+section:nth-of-type(8) article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+section:nth-of-type(8) article:first-of-type {
+    display: flex;
+    flex-direction: row;
+}
+
+section:nth-of-type(8) article:first-of-type div:first-of-type {
+    background-color: #635BFF;
+}
+
+section:nth-of-type(8) article:first-of-type div:first-of-type:hover {
+    background-color: black;
+    opacity: 1;
+    color: white;
+}
+
+section:nth-of-type(8) article:first-of-type div:first-of-type a:hover {
+    color: white;
+}
+
+section:nth-of-type(8) article:first-of-type div:last-of-type a {
+    color: #635BFF;
+}
+
+section:nth-of-type(8) article:first-of-type div:hover {
+    opacity: 1;
+}
+
+section:nth-of-type(8) article:first-of-type div:last-of-type a:hover {
+    color: black;
+}
+
+section:nth-of-type(8) article img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+/* Vormgeving h6 met blauwe lijn links */
+
+section:nth-of-type(8) h6 {
+    color: #0A2540;
+    font-size: 15px;
+    margin: 10px 0px;
+    border-left: solid #635BFF 1px;
+    padding-left: 15px;
+    position: relative;
+    left: -16px;
+}
+
+section:nth-of-type(8) article p {
+    margin-top: 0px;
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+/* Vormgeving van link */
+
+section:nth-of-type(8) article a {
+    color: #635BFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px
+}
+
+section:nth-of-type(8) p a {
+        color: #635BFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px
+}
+
+section:nth-of-type(8) article a:hover {
+    color: black;
+}
+
 
 /* ##############################################
 
