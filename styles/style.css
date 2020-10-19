@@ -578,7 +578,7 @@ section:nth-of-type(7) container::before {
     position: absolute;
     width: 100vw;
     height: 120vh;
-    top: -15.5%;
+    top: -2%;
     left: -8%;
     z-index:-1;
     
@@ -586,7 +586,7 @@ section:nth-of-type(7) container::before {
     background-image: url("https://eliaspoolman.github.io/blokweb/images/earth.png");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: contain;
+    background-size: cover;
 }
 
 /* De tekst boven de achtergrond plaatsen */ 
@@ -782,7 +782,7 @@ footer container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 80vh;
+    height: 85vh;
 }
 
 footer container::before {
