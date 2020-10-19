@@ -113,12 +113,18 @@ header nav:hover {
     background-color: hsla(0,0%,100%,0.4);
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease !important;
+    -ms-transition: all .4s ease !important;
+    -o-transition: all .4s ease !important;
 }
 
 a:hover,
 footer li:hover {
     transition: all .4s ease !important;
     -webkit-transition: all .4s ease !important;
+    -moz-transition: all .4s ease !important;
+    -ms-transition: all .4s ease !important;
+    -o-transition: all .4s ease !important;
 }
 
 
@@ -203,6 +209,9 @@ header section article ul li p:hover {
     opacity: 0.6;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease !important;
+    -ms-transition: all .4s ease !important;
+    -o-transition: all .4s ease !important;
 }
 
 header section article ul li img {
@@ -278,8 +287,11 @@ section article:first-of-type div:first-of-type {
 /* knop vaag maken bij hoveren */
 section article div:hover {
     opacity: 0.6;
-        transition: all .4s ease;
+    transition: all .4s ease;
     -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease !important;
+    -ms-transition: all .4s ease !important;
+    -o-transition: all .4s ease !important;
 }
 
 section article div:first-of-type a {
@@ -353,8 +365,6 @@ section:nth-of-type(3) p a {
 
 section:nth-of-type(3) p a:hover {
     color: black;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
 }
 
 section:nth-of-type(3) article div {
@@ -452,6 +462,9 @@ section:nth-of-type(5) container article:first-of-type div:hover {
     background-color: white;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease !important;
+    -ms-transition: all .4s ease !important;
+    -o-transition: all .4s ease !important;
 }
 
 section:nth-of-type(5) container article:first-of-type div a {
@@ -507,6 +520,9 @@ section:nth-of-type(5) container article:nth-of-type(3) a:hover {
     color: white;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease !important;
+    -ms-transition: all .4s ease !important;
+    -o-transition: all .4s ease !important;
 }
 
 /* ##############################################
@@ -672,6 +688,7 @@ section:nth-of-type(6) article a:hover {
     color: black;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+
 }
 
 
@@ -881,7 +898,8 @@ section:nth-of-type(8) p a {
     font-size: 18px
 }
 
-section:nth-of-type(8) article a:hover {
+section:nth-of-type(8) article a:hover,
+section:nth-of-type(8) p a:hover {
     color: black;
 }
 
