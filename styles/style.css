@@ -105,10 +105,20 @@ header nav {
     align-items: center;
 }
 
-/* hover effect menu knopje */
+/* hover effect menu knopje 
+   bron: https://stackoverflow.com/questions/19469495/css-slow-hover-effect
+*/
 
 header nav:hover {
     background-color: hsla(0,0%,100%,0.4);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+a:hover,
+footer li:hover {
+    transition: all .4s ease !important;
+    -webkit-transition: all .4s ease !important;
 }
 
 
@@ -179,7 +189,6 @@ header section article ul li {
     display: flex;
     align-items: center;
     padding: 5px;
-    margin-right: 70px
 }
 
 header section article ul li p {
@@ -192,6 +201,8 @@ header section article ul li p {
 
 header section article ul li p:hover {
     opacity: 0.6;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 header section article ul li img {
@@ -201,7 +212,7 @@ header section article ul li img {
 
 header section article:last-of-type {
     display: flex;
-    padding: 6px 80px;
+    padding: 6px 20px;
     background-color: #f6f9fc;
     margin: 5px;
     border-radius: 5px;
@@ -211,6 +222,8 @@ header section article:last-of-type {
 
 header section article:last-of-type div {
     background-color: #635BFF !important;
+    width: 50%;
+    align-self: center;
 }
 
 
@@ -265,6 +278,8 @@ section article:first-of-type div:first-of-type {
 /* knop vaag maken bij hoveren */
 section article div:hover {
     opacity: 0.6;
+        transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 section article div:first-of-type a {
@@ -338,6 +353,8 @@ section:nth-of-type(3) p a {
 
 section:nth-of-type(3) p a:hover {
     color: black;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 section:nth-of-type(3) article div {
@@ -433,6 +450,8 @@ section:nth-of-type(5) container article:first-of-type div{
 section:nth-of-type(5) container article:first-of-type div:hover {
     opacity: 1;
     background-color: white;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 section:nth-of-type(5) container article:first-of-type div a {
@@ -486,6 +505,8 @@ section:nth-of-type(5) container article:nth-of-type(3) a {
 section:nth-of-type(5) container article:nth-of-type(2) a:hover,
 section:nth-of-type(5) container article:nth-of-type(3) a:hover {
     color: white;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 /* ##############################################
@@ -649,6 +670,8 @@ section:nth-of-type(6) article a {
 
 section:nth-of-type(6) article a:hover {
     color: black;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 
@@ -713,6 +736,10 @@ section:nth-of-type(7) container a {
     font-weight: 500;
 }
 
+section:nth-of-type(7) container a:hover {
+    color: white;
+}
+
 /* Opmaak knop */
 section:nth-of-type(7) container article:first-of-type div{
     background-color: #00D4FF;
@@ -722,6 +749,7 @@ section:nth-of-type(7) container article:first-of-type div{
 section:nth-of-type(7) container article:first-of-type div:hover {
     opacity: 1;
     background-color: white;
+    
 }
 
 section:nth-of-type(7) container article:first-of-type div a {
