@@ -30,8 +30,12 @@
 }
 
 body {
+    margin: 0px;
+}
+
+body > container {
     font-family: "sohne","Helvetica Neue","Arial",sans-serif;
-    margin: 15px 0px;
+    padding: 20px 0px;
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 3.5vw 93vw 3.5vw;
@@ -128,10 +132,10 @@ section:first-of-type {
 /* Opmaak van de h1 */
 
 section h1:first-of-type {
-    margin-top: 1.7em;
-    font-size: 65px;
+    margin-top: 100px;
+    font-size: 11vw;
     margin-bottom: 0.5em;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
     line-height: 1;
 }
 
@@ -299,7 +303,6 @@ section:nth-of-type(5) container::before {
     z-index:-1;
     background-color: #0a2540;
     transform: rotate(-6deg);
-    overflow-x: hidden;
 }
 
 /* De tekst boven de achtergrond plaatsen */ 
@@ -401,10 +404,13 @@ section:nth-of-type(5) container article:nth-of-type(4) {
     background-color: #0D2E4F;
     border-radius: 10px;
     margin-top: 35px;
+    margin-left: -10px;
+    width: 100%;
+    overflow-x: scroll;
 }
 
 section:nth-of-type(5) container article:nth-of-type(4) ul,
-section:nth-of-type(5) container article:nth-of-type(6) ul{
+section:nth-of-type(5) container article:nth-of-type(6) ul {
     list-style-type: none;
     padding-left: 0px;
     color: white;
@@ -467,6 +473,8 @@ section:nth-of-type(5) container article:nth-of-type(5) {
     flex-direction: row;
     justify-content: space-between;
     font-family: 'courier';
+    margin-left: -10px;
+    width: 100%;
 }
 
 section:nth-of-type(5) container article:nth-of-type(5) p {
@@ -482,6 +490,8 @@ section:nth-of-type(5) container article:nth-of-type(6) {
     background-color: #06182c;
     border: 1px solid #0D2E4F;
     border-radius: 10px;
+    margin-left: -10px;
+    width: 100%;
 }
 
 section:nth-of-type(5) container article:nth-of-type(6) main {
@@ -496,19 +506,20 @@ section:nth-of-type(5) container article:nth-of-type(6) main {
 */
 
 section:nth-of-type(6) {
-    margin-top: 1760px;
+    margin-top: 950px;
     padding-left: 15px;
+    display: inline-block;
 }
 
 /* Opmaak van de twee specificaties in deze sectie */
 
-section:nth-of-type(6) article{
+section:nth-of-type(6) article {
     display: flex;
     flex-direction: column;
     margin-top: 35px;
 }
 
-section:nth-of-type(6) article img{
+section:nth-of-type(6) article img {
     width: 40px;
     margin-bottom: 10px;
 }
@@ -666,8 +677,7 @@ section:nth-of-type(7) container article p {
 
 footer {
     position: relative;
-        padding-left: 25px;
-
+    padding-left: 25px;
 }
 
 footer img {
@@ -679,7 +689,7 @@ footer container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 67vh;
+    height: 80vh;
 }
 
 footer container::before {
@@ -692,7 +702,6 @@ footer container::before {
     z-index:-1;
     background-color: #f6f9fc;
     transform: rotate(-6deg);
-    overflow-x: hidden;
 }
 
 footer > article:first-of-type {
