@@ -36,7 +36,6 @@ body {
 body > container {
     font-family: "sohne","Helvetica Neue","Arial",sans-serif;
     padding: 20px 0px;
-    overflow-x: hidden;
     display: grid;
     grid-template-columns: 3.5vw 93vw 3.5vw;
     position: absolute;
@@ -117,6 +116,104 @@ header nav:hover {
 header nav img {
     width: 15px;
 }
+
+/* Opmaak van het uitklapmenu */
+
+header section {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    border-radius: 10px;
+    
+    /* gegenereerd op https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+}
+
+.menustripe {
+    display: none !important;
+}
+
+header section article {
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+header section > article:first-of-type {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+header section article:first-of-type img {
+    height: 20px;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+header section article:nth-of-type(3) {
+    border-top: 2px #f6f9fc dashed;
+}
+
+header section article h6 {
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    opacity: 0.4;
+}
+
+header section article ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 170px;
+}
+
+header section article ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-right: 70px
+}
+
+header section article ul li p {
+    padding: 0px 0px;
+    margin: 0px;
+    margin-bottom: 0px !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header section article ul li p:hover {
+    opacity: 0.6;
+}
+
+header section article ul li img {
+    height: 24px;
+    margin-right: 10px
+}
+
+header section article:last-of-type {
+    display: flex;
+    padding: 6px 80px;
+    background-color: #f6f9fc;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+header section article:last-of-type div {
+    background-color: #635BFF !important;
+}
+
+
 
 /* ##############################################
 
@@ -406,7 +503,6 @@ section:nth-of-type(5) container article:nth-of-type(4) {
     margin-top: 35px;
     margin-left: -10px;
     width: 100%;
-/*    overflow-x: scroll;*/
 }
 
 section:nth-of-type(5) container article:nth-of-type(4) ul,
@@ -578,7 +674,7 @@ section:nth-of-type(7) container::before {
     position: absolute;
     width: 100vw;
     height: 120vh;
-    max-height: 900px;
+    max-height: 975px;
     top: -2%;
     left: -8%;
     z-index:-1;
