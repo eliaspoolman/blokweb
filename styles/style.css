@@ -31,7 +31,7 @@
 
 body {
     font-family: "sohne","Helvetica Neue","Arial",sans-serif;
-    margin: 1em 0em;
+    margin: 15px 0px;
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 3.5vw 93vw 3.5vw;
@@ -196,6 +196,10 @@ section:nth-of-type(2) ul li {
     justify-self: center;
 }
 
+section:nth-of-type(2) ul li img {
+    height: 50px;
+}
+
 /* ##############################################
 
     Opmaak van de sectie: Unified platform
@@ -295,6 +299,7 @@ section:nth-of-type(5) container::before {
     z-index:-1;
     background-color: #0a2540;
     transform: rotate(-6deg);
+    overflow-x: hidden;
 }
 
 /* De tekst boven de achtergrond plaatsen */ 
@@ -687,6 +692,7 @@ footer container::before {
     z-index:-1;
     background-color: #f6f9fc;
     transform: rotate(-6deg);
+    overflow-x: hidden;
 }
 
 footer > article:first-of-type {
