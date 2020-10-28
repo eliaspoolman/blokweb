@@ -40,7 +40,7 @@ body > container {
     grid-template-columns: 3.5vw 93vw 3.5vw;
     position: absolute;
     
-    /* Bron: https://medium.com/better-programming/improving-font-rendering-with-css-3383fc358cbc*/
+    /* Bron: https://medium.com/better-programming/improving-font-rendering-with-css-3383fc358cbc */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -118,6 +118,9 @@ header nav:hover {
     -o-transition: all .4s ease !important;
 }
 
+/* Toegankelijkheid: als er over een link wordt gehoverd, laat dan geleidelijk
+   een nieuwe kleur zien. (kleuren verderop in de CSS) */
+
 a:hover,
 footer li:hover {
     transition: all .4s ease !important;
@@ -127,6 +130,18 @@ footer li:hover {
     -o-transition: all .4s ease !important;
 }
 
+/* Toegankelijkheid: als er op een knop of link wordt geklikt, maak de tekst rood */
+
+a:active {
+    color: red !important;
+    opacity: 1;
+    font-weight: 400;
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition:none !important;
+    -o-transition: none !important;
+}
 
 /* instelling voor de afbeelding van de menu-knop */
 header nav img {
@@ -284,7 +299,7 @@ section article:first-of-type div:first-of-type {
     border-radius: 20px;
 }
 
-/* knop vaag maken bij hoveren */
+/* Toegankelijkheid: knop vaag maken bij hoveren */
 section article div:hover {
     opacity: 0.6;
     transition: all .4s ease;
@@ -292,6 +307,17 @@ section article div:hover {
     -moz-transition: all .4s ease !important;
     -ms-transition: all .4s ease !important;
     -o-transition: all .4s ease !important;
+}
+
+/* Toegankelijkheid: knop weer volle opacity geven als deze geselecteerd wordt */
+
+section article div:active {
+    opacity: 1;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
 }
 
 section article div:first-of-type a {
@@ -571,7 +597,7 @@ section:nth-of-type(5) container article:nth-of-type(4) main ul li:nth-of-type(5
     margin-left: 17px
 }
 
-/* De kleuren van de code */
+/* De kleuren van de code in de code editor */
 
 .orange {
     color: #FFA956;
