@@ -1,8 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
-
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
+**Auteur:** -Elias Poolman-
 
 
 ## Bronnenlijst
@@ -19,13 +16,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
-**Screenshot(s):**
-
--screenshot(s) van je eindresultaat-
-
 
 ## Voortgang 5 (week 8)
 
+### Stand van zaken
+
+Begin gemaakt van de About page.
 
 ## Voortgang 4 (week 7)
 
@@ -42,7 +38,7 @@ Je kunt tabben over de pagina en de links veranderen van kleur.
 
 ### Stand van zaken
 
-Geen voortgang
+Geen voortgang, wel gesprek.
 
 
 ### Verslag van meeting

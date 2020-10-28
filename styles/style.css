@@ -206,6 +206,11 @@ header section article ul {
     height: 170px;
 }
 
+header section article ul a {
+    text-decoration: none;
+    display: flex;
+}
+
 header section article ul li {
     display: flex;
     align-items: center;
