@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -Elias Poolman-
+**Auteur:** Elias Poolman
 
 
 ## Bronnenlijst
@@ -9,12 +9,20 @@
 4. https://www.w3schools.com/cssref/pr_background-image.asp
 5. https://stackoverflow.com/questions/19469495/css-slow-hover-effect
 6. https://www.cssmatic.com/box-shadow
-
+7. https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+De home pagina was af en zag er goed uit, de tips om mee te nemen waren
+1. micro-interactie verder uitwerken
+2. niet bestaande container tag weghalen
+3. semantische html gebruiken
+
+To-do voor eindversie (naast de About pagina maken)
+1. animaties toevoegen d.m.v. keyframes
+2. form werkend maken
+3. video's toevoegen website
 
 
 ## Voortgang 5 (week 8)
