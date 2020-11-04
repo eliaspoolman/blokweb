@@ -19,7 +19,7 @@ closebutton.addEventListener("click", toonmenu);
 var paymentsstack = document.querySelector(".paymentsstack");
 
 function toonplaatjes() {
-    var element = document.getElementsByClassName(".slidein");
+    var element = document.getElementsByClassName("slidein");
     
     for (var i = 0; i < element.length; i++) {
         element[i].classList.toggle("hidden");
