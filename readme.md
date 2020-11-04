@@ -15,14 +15,15 @@
 ## Eindgesprek (week 7/8)
 
 De home pagina was af en zag er goed uit, de tips om mee te nemen waren
-1. micro-interactie verder uitwerken
-2. niet bestaande container tag weghalen
-3. semantische html gebruiken
+1. Micro-interacties verder uitwerken op website
+2. Niet bestaande container tag weghalen van website
+3. Semantische html gebruiken, dus geen article gebruiken waar dat niet nodig is.
 
-To-do voor eindversie (naast de About pagina maken)
-1. animaties toevoegen d.m.v. keyframes
-2. form werkend maken
-3. video's toevoegen website
+To-do voor eindversie 
+1. About pagina maken
+2. Animaties toevoegen d.m.v. keyframes
+3. Form subscribe werkend maken
+4. Video's toevoegen website
 
 
 ## Voortgang 5 (week 8)

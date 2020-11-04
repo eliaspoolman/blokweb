@@ -300,21 +300,21 @@ header section article:last-of-type div a {
 
 /* Opmaak van de call to action knoppen */
 
-.home section article {
+.home section > div {
     display: flex;
 }
 
-.home section article:first-of-type div {
+.home section div:first-of-type div {
     padding: 8px 15px;
 }
 
-.home section article:first-of-type div:first-of-type {
+.home section div:first-of-type div:first-of-type {
     background-color: #0A2450;
     border-radius: 20px;
 }
 
 /* Toegankelijkheid: knop vaag maken bij hoveren */
-.home section article div:hover {
+.home section div div:hover {
     opacity: 0.6;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
@@ -325,7 +325,7 @@ header section article:last-of-type div a {
 
 /* Toegankelijkheid: knop weer volle opacity geven als deze geselecteerd wordt */
 
-.home section article div:active {
+.home section div div:active {
     opacity: 1;
     transition: none;
     -webkit-transition: none;
@@ -334,15 +334,15 @@ header section article:last-of-type div a {
     -o-transition: none;
 }
 
-.home section article div:first-of-type a {
+.home section div div:first-of-type a {
     color: white;
 }
 
-.home section article div:nth-of-type(2) a {
+.home section div div:nth-of-type(2) a {
     color: #0A2450;
 }
 
-.home section article div a {
+.home section div div a {
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -488,12 +488,12 @@ header section article:last-of-type div a {
 }
 
 /* Opmaak knop */
-.home section:nth-of-type(5) article:first-of-type div{
+.home section:nth-of-type(5) div:first-of-type div{
     background-color: #00D4FF;
     margin-top: 5px;
 }
 
-.home section:nth-of-type(5) article:first-of-type div:hover {
+.home section:nth-of-type(5) div:first-of-type div:hover {
     opacity: 1;
     background-color: white;
     transition: all .4s ease;
@@ -503,21 +503,21 @@ header section article:last-of-type div a {
     -o-transition: all .4s ease !important;
 }
 
-.home section:nth-of-type(5) article:first-of-type div a {
+.home section:nth-of-type(5) div:first-of-type div a {
     color: #0a2540;
 }
 
 /* Opmaak van de twee specificaties in deze sectie */
 
-.home section:nth-of-type(5) article:nth-of-type(2),
-.home section:nth-of-type(5) article:nth-of-type(3){
+.home section:nth-of-type(5) article:nth-of-type(1),
+.home section:nth-of-type(5) article:nth-of-type(2){
     display: flex;
     flex-direction: column;
     margin-top: 35px;
 }
 
-.home section:nth-of-type(5) article:nth-of-type(2) img,
-.home section:nth-of-type(5) article:nth-of-type(3) img{
+.home section:nth-of-type(5) article:nth-of-type(1) img,
+.home section:nth-of-type(5) article:nth-of-type(2) img{
     width: 40px;
     margin-bottom: 10px;
 }
@@ -543,16 +543,16 @@ header section article:last-of-type div a {
 
 /* Vormgeving van link */
 
-.home section:nth-of-type(5) article:nth-of-type(2) a,
-.home section:nth-of-type(5) article:nth-of-type(3) a {
+.home section:nth-of-type(5) article:nth-of-type(1) a,
+.home section:nth-of-type(5) article:nth-of-type(2) a {
     color: #00D4FF;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px
 }
 
-.home section:nth-of-type(5) article:nth-of-type(2) a:hover,
-.home section:nth-of-type(5) article:nth-of-type(3) a:hover {
+.home section:nth-of-type(5) article:nth-of-type(1) a:hover,
+.home section:nth-of-type(5) article:nth-of-type(2) a:hover {
     color: white;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
@@ -569,7 +569,7 @@ header section article:last-of-type div a {
 */
 
 
-.home section:nth-of-type(5) article:nth-of-type(4) {
+.home section:nth-of-type(5) article:nth-of-type(3) {
     display: flex;
     background-color: #0D2E4F;
     border-radius: 10px;
@@ -578,24 +578,24 @@ header section article:last-of-type div a {
     width: 100%;
 }
 
-.home section:nth-of-type(5) article:nth-of-type(4) ul,
-.home section:nth-of-type(5) article:nth-of-type(6) ul {
+.home section:nth-of-type(5) article:nth-of-type(3) ul,
+.home section:nth-of-type(5) article:nth-of-type(5) ul {
     list-style-type: none;
     padding-left: 0px;
     color: white;
 }
 
-.home section:nth-of-type(5) article:nth-of-type(4) main {
+.home section:nth-of-type(5) article:nth-of-type(3) main {
     border: none;
 }
 
-.home section:nth-of-type(5) article:nth-of-type(4) aside ul {
+.home section:nth-of-type(5) article:nth-of-type(3) aside ul {
     color: #55718D;
 }
 
-.home section:nth-of-type(5) article:nth-of-type(4) aside,
-.home section:nth-of-type(5) article:nth-of-type(4) main,
-.home section:nth-of-type(5) article:nth-of-type(6) {
+.home section:nth-of-type(5) article:nth-of-type(3) aside,
+.home section:nth-of-type(5) article:nth-of-type(3) main,
+.home section:nth-of-type(5) article:nth-of-type(5) {
     padding: 0px 0px 0px 25px;
     line-height: 1.6;
     font-family: 'courier';
@@ -604,8 +604,8 @@ header section article:last-of-type div a {
 
 /* Bron: typen animatie: https://css-tricks.com/snippets/css/typewriter-effect/ */
 
-.home section:nth-of-type(5) article:nth-of-type(4) main ul,
-.home section:nth-of-type(5) article:nth-of-type(6) ul {
+.home section:nth-of-type(5) article:nth-of-type(3) main ul,
+.home section:nth-of-type(5) article:nth-of-type(5) ul {
   overflow: hidden; /* Zorgt ervoor dat content verborgen blijft tot het typen */
   text-align: left;
   opacity: 0;
@@ -631,12 +631,12 @@ header section article:last-of-type div a {
   50% { border-color: #0D2E4F; }
 }
 
-.home section:nth-of-type(5) article:nth-of-type(6) ul  {
+.home section:nth-of-type(5) article:nth-of-type(5) ul  {
     height: 50vw;
 }
 
-.home section:nth-of-type(5) article:nth-of-type(4) main ul li:nth-of-type(4),
-.home section:nth-of-type(5) article:nth-of-type(4) main ul li:nth-of-type(5) {
+.home section:nth-of-type(5) article:nth-of-type(3) main ul li:nth-of-type(4),
+.home section:nth-of-type(5) article:nth-of-type(3) main ul li:nth-of-type(5) {
     margin-left: 17px
 }
 
@@ -670,7 +670,7 @@ header section article:last-of-type div a {
 
 
 /* Opmaak van het tussenstukje tekst */
-.home section:nth-of-type(5) article:nth-of-type(5) {
+.home section:nth-of-type(5) article:nth-of-type(4) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -679,7 +679,7 @@ header section article:last-of-type div a {
     width: 100%;
 }
 
-.home section:nth-of-type(5) article:nth-of-type(5) p {
+.home section:nth-of-type(5) article:nth-of-type(4) p {
     background-color: none;
     line-height: 1;
     margin-bottom: 0px;
@@ -688,7 +688,7 @@ header section article:last-of-type div a {
 
 /* Opmaak van de tweede code editor */
 
-.home section:nth-of-type(5) article:nth-of-type(6) {
+.home section:nth-of-type(5) article:nth-of-type(5) {
     background-color: #06182c;
     border: 1px solid #0D2E4F;
     border-radius: 10px;
@@ -696,7 +696,7 @@ header section article:last-of-type div a {
     width: 100%;
 }
 
-.home section:nth-of-type(5) article:nth-of-type(6) main {
+.home section:nth-of-type(5) article:nth-of-type(5) main {
     border: none;
 }
 
@@ -879,34 +879,34 @@ header section article:last-of-type div a {
     margin-top: 35px;
 }
 
-.home section:nth-of-type(8) article:first-of-type {
+.home section:nth-of-type(8) div:first-of-type {
     display: flex;
     flex-direction: row;
 }
 
-.home section:nth-of-type(8) article:first-of-type div:first-of-type {
+.home section:nth-of-type(8) div:first-of-type div:first-of-type {
     background-color: #635BFF;
 }
 
-.home section:nth-of-type(8) article:first-of-type div:first-of-type:hover {
+.home section:nth-of-type(8) div:first-of-type div:first-of-type:hover {
     background-color: black;
     opacity: 1;
     color: white;
 }
 
-.home section:nth-of-type(8) article:first-of-type div:first-of-type a:hover {
+.home section:nth-of-type(8) div:first-of-type div:first-of-type a:hover {
     color: white;
 }
 
-.home section:nth-of-type(8) article:first-of-type div:last-of-type a {
+.home section:nth-of-type(8) div:first-of-type div:last-of-type a {
     color: #635BFF;
 }
 
-.home section:nth-of-type(8) article:first-of-type div:hover {
+.home section:nth-of-type(8) div:first-of-type div:hover {
     opacity: 1;
 }
 
-.home section:nth-of-type(8) article:first-of-type div:last-of-type a:hover {
+.home section:nth-of-type(8) div:first-of-type div:last-of-type a:hover {
     color: black;
 }
 
