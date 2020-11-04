@@ -874,7 +874,7 @@ header section article:last-of-type div a {
     margin-top: 35px;
 }
 
-.home section:nth-of-type(8) article:first-of-type {
+.home section:nth-of-type(8) article:firdst-of-type {
     display: flex;
     flex-direction: row;
 }
@@ -1062,7 +1062,7 @@ footer p {
 
 .about {
     grid-template-columns: 100vw;
-    
+    width: 100%;
 }
 
 /* Afstand tekts van menu goedzetten */
@@ -1109,11 +1109,6 @@ footer p {
     color: #424770;
     padding-left: 5vw;
     padding-right: 5vw;
-}
-
-/* De overgang goed weergeven */
-.about section:first-of-type img {
-    margin-left: -3.9vw;
 }
 
 /* ##############################################
