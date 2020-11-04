@@ -22,8 +22,8 @@ function toonplaatjes() {
     var element = document.getElementsByClassName("slidein");
     
     for (var i = 0; i < element.length; i++) {
-        element[i].classList.toggle("hidden");
-        element[i].classList.toggle("fade-in-element");
+        element[i].classList.remove("hidden");
+        element[i].classList.add("fade-in-element");
     }
 
 }
