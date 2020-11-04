@@ -1174,7 +1174,7 @@ footer p {
     list-style-type: none;
     color: #aab7c4;
     font-size: 14px;
-    margin-left: 35px;
+    margin-left: 25px;
     font-weight: 500;
     margin-top: -14px;
 }
@@ -1254,6 +1254,23 @@ footer p {
     margin: 15px;
     margin-top: 45px;
 }
+
+/* Animatie van elementen */
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.8,.8)}
+    to {opacity: 1;}
+}
+
+.fade-in-element {
+    animation: fade-in 1.4s;
+}
+
+/* Opmaak van lijst iconen */
 
 .about > section:nth-of-type(3) ul li {
     display: flex;
