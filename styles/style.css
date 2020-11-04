@@ -607,11 +607,16 @@ header section article:last-of-type div a {
 .home section:nth-of-type(5) article:nth-of-type(4) main ul,
 .home section:nth-of-type(5) article:nth-of-type(6) ul {
   overflow: hidden; /* Zorgt ervoor dat content verborgen blijft tot het typen */
-  animation: 
+  text-align: left;
+  opacity: 0;
+  margin-left: 0px;
+}
+
+.typeneditor {
+    opacity: 1 !important;
+    animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
-  text-align: left;
-  margin-left: 0px;
 }
 
 /* Het effect van het typen */
