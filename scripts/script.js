@@ -26,7 +26,10 @@ function typeeditor() {
     }
 }
 
-editorcontainer.addEventListener("mouseenter", typeeditor);
+// https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+if(editorcontainer) {
+    editorcontainer.addEventListener("mouseenter", typeeditor);
+}
 
 //Insliden items about page
 
@@ -42,5 +45,7 @@ function toonplaatjes() {
 
 }
 
-paymentsstack.addEventListener("mouseenter", toonplaatjes);
+if(paymentsstack) {
+    paymentsstack.addEventListener("mouseenter", toonplaatjes);
+}
 
