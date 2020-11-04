@@ -773,7 +773,7 @@ header section article:last-of-type div a {
     margin-bottom: 30px;
     padding-left: 3.5vw;
     padding-right: 3.5vw;
-    margin-top: -135vh;
+    margin-top: -105vh;
     z-index: 5;
     position: relative;
     padding-top: 80px;
@@ -874,7 +874,7 @@ header section article:last-of-type div a {
     margin-top: 35px;
 }
 
-.home section:nth-of-type(8) article:firdst-of-type {
+.home section:nth-of-type(8) article:first-of-type {
     display: flex;
     flex-direction: row;
 }
