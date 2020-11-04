@@ -120,7 +120,9 @@ header nav:hover {
    een nieuwe kleur zien. (kleuren verderop in de CSS) */
 
 a:hover,
-footer li:hover {
+footer li:hover,
+div:hover,
+article:hover {
     transition: all .4s ease !important;
     -webkit-transition: all .4s ease !important;
     -moz-transition: all .4s ease !important;
@@ -219,7 +221,7 @@ header section article ul li p {
     padding: 0px 0px;
     margin: 0px;
     margin-bottom: 0px !important;
-    font-size: 15px;
+    font-size: 15px !important;
     font-weight: 500;
 }
 
@@ -237,22 +239,31 @@ header section article ul li img {
     margin-right: 10px
 }
 
+/* Opmaak van de inlog knop */
+
 header section article:last-of-type {
     display: flex;
-    padding: 6px 20px;
+    padding: 16px 20px;
     background-color: #f6f9fc;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 5px !important;
     text-align: center;
-    
 }
 
 header section article:last-of-type div {
     background-color: #635BFF !important;
     width: 50%;
     align-self: center;
+    border-radius: 20px;
+    padding: 8px;
 }
 
+header section article:last-of-type div a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
 
 
 /* ##############################################
@@ -262,13 +273,13 @@ header section article:last-of-type div {
    ##############################################
 */
 
-section:first-of-type {
+.home section:first-of-type {
     margin-left: 20px;
 }
 
 /* Opmaak van de h1 */
 
-section h1:first-of-type {
+.home section h1:first-of-type {
     margin-top: 100px;
     font-size: 11vw;
     margin-bottom: 0.5em;
@@ -277,33 +288,33 @@ section h1:first-of-type {
 }
 
 /* Opmaak van de eerste alinea met tekst */
-section p {
+.home section p {
     font-size: 18px;
     color: #425466;
     line-height: 1.5;
 }
 
-section:first-of-type p:first-of-type {
+.home section:first-of-type p:first-of-type {
     margin-bottom: 30px;
 }
 
 /* Opmaak van de call to action knoppen */
 
-section article {
+.home section article {
     display: flex;
 }
 
-section article:first-of-type div {
+.home section article:first-of-type div {
     padding: 8px 15px;
 }
 
-section article:first-of-type div:first-of-type {
+.home section article:first-of-type div:first-of-type {
     background-color: #0A2450;
     border-radius: 20px;
 }
 
 /* Toegankelijkheid: knop vaag maken bij hoveren */
-section article div:hover {
+.home section article div:hover {
     opacity: 0.6;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
@@ -314,7 +325,7 @@ section article div:hover {
 
 /* Toegankelijkheid: knop weer volle opacity geven als deze geselecteerd wordt */
 
-section article div:active {
+.home section article div:active {
     opacity: 1;
     transition: none;
     -webkit-transition: none;
@@ -323,22 +334,22 @@ section article div:active {
     -o-transition: none;
 }
 
-section article div:first-of-type a {
+.home section article div:first-of-type a {
     color: white;
 }
 
-section article div:nth-of-type(2) a {
+.home section article div:nth-of-type(2) a {
     color: #0A2450;
 }
 
-section article div a {
+.home section article div a {
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
 }
 
 /* Opmaak van het logo grid */
-section:nth-of-type(2) ul {
+.home section:nth-of-type(2) ul {
     list-style-type: none;
     padding-left: 0px;
     margin-top: 100px;
@@ -349,11 +360,11 @@ section:nth-of-type(2) ul {
 }
 
 /* Centreer het logo in het midden van zijn vakje */
-section:nth-of-type(2) ul li {
+.home section:nth-of-type(2) ul li {
     justify-self: center;
 }
 
-section:nth-of-type(2) ul li img {
+.home section:nth-of-type(2) ul li img {
     height: 50px;
 }
 
@@ -363,53 +374,53 @@ section:nth-of-type(2) ul li img {
 
    ##############################################
 */
-section:nth-of-type(3) {
+.home section:nth-of-type(3) {
     background-color: #f6f9fc;
     padding-top: 60px;
     padding-left: 20px;
 }
 
-h4 {
+.home h4 {
     font-size: 18px;
 }
 
-h4:first-of-type {
+.home h4:first-of-type {
     color: #635BFF;
 }
 
-h2 {
+.home h2 {
     font-size: 34px;
     font-weight: 600;
     margin-bottom: 40px;
 }
 
-section:nth-of-type(3) p {
+.home section:nth-of-type(3) p {
     margin-bottom: 33px;
 }
 
-section:nth-of-type(3) p a {
+.home section:nth-of-type(3) p a {
     color: #635BFF;
     font-weight: 500;
 }
 
-section:nth-of-type(3) p a:hover {
+.home section:nth-of-type(3) p a:hover {
     color: black;
 }
 
-section:nth-of-type(3) article div {
+.home section:nth-of-type(3) article div {
     background-color: #635BFF;
 }
 
 
 /* Banner met vier afbeeldingen vormgeven in een grid */
-section:nth-of-type(4) {
+.home section:nth-of-type(4) {
     display: flex;
     flex-direction: row;
     padding-top: 90px;
     background-color: #f6f9fc;
 }
 
-section:nth-of-type(4) img {
+.home section:nth-of-type(4) img {
     margin-bottom: 25px;
     margin-right: 25px;
     border-radius: 10px;
@@ -421,12 +432,12 @@ section:nth-of-type(4) img {
 
 /* randen van afbeelding linksonder */
 
-section:nth-of-type(4) aside:first-of-type img:nth-of-type(2) {
+.home section:nth-of-type(4) aside:first-of-type img:nth-of-type(2) {
     border-radius: 50px 50px 0px 0px;
     margin-bottom: 0px;
 }
 
-section:nth-of-type(4) aside:last-of-type img:nth-of-type(2) {
+.home section:nth-of-type(4) aside:last-of-type img:nth-of-type(2) {
     margin-bottom: 0px;
 }
 
@@ -438,7 +449,7 @@ section:nth-of-type(4) aside:last-of-type img:nth-of-type(2) {
    ##############################################
 */
 
-section:nth-of-type(5) {
+.home section:nth-of-type(5) {
     position: relative;
     padding-left: 3.5vw;
     padding-right: 3.5vw;
@@ -449,7 +460,7 @@ section:nth-of-type(5) {
 
 /* Het grote blauwe schuine achtergrondvlak */
 
-section:nth-of-type(5)::before {
+.home section:nth-of-type(5)::before {
     content: "";
     position: absolute;
     width: 230%;
@@ -463,26 +474,26 @@ section:nth-of-type(5)::before {
 
 /* Opmaak h4, h2 en p in deze sectie */
 
-section:nth-of-type(5) h4 {
+.home section:nth-of-type(5) h4 {
     color: #00D4FF;
 }
 
-section:nth-of-type(5) h2 {
+.home section:nth-of-type(5) h2 {
     color: white;
     margin-bottom: 30px;
 }
 
-section:nth-of-type(5) p {
+.home section:nth-of-type(5) p {
     color: #adbdcc;
 }
 
 /* Opmaak knop */
-section:nth-of-type(5) article:first-of-type div{
+.home section:nth-of-type(5) article:first-of-type div{
     background-color: #00D4FF;
     margin-top: 5px;
 }
 
-section:nth-of-type(5) article:first-of-type div:hover {
+.home section:nth-of-type(5) article:first-of-type div:hover {
     opacity: 1;
     background-color: white;
     transition: all .4s ease;
@@ -492,28 +503,28 @@ section:nth-of-type(5) article:first-of-type div:hover {
     -o-transition: all .4s ease !important;
 }
 
-section:nth-of-type(5) article:first-of-type div a {
+.home section:nth-of-type(5) article:first-of-type div a {
     color: #0a2540;
 }
 
 /* Opmaak van de twee specificaties in deze sectie */
 
-section:nth-of-type(5) article:nth-of-type(2),
-section:nth-of-type(5) article:nth-of-type(3){
+.home section:nth-of-type(5) article:nth-of-type(2),
+.home section:nth-of-type(5) article:nth-of-type(3){
     display: flex;
     flex-direction: column;
     margin-top: 35px;
 }
 
-section:nth-of-type(5) article:nth-of-type(2) img,
-section:nth-of-type(5) article:nth-of-type(3) img{
+.home section:nth-of-type(5) article:nth-of-type(2) img,
+.home section:nth-of-type(5) article:nth-of-type(3) img{
     width: 40px;
     margin-bottom: 10px;
 }
 
 /* Vormgeving h6 met blauwe lijn links */
 
-section:nth-of-type(5) h6 {
+.home section:nth-of-type(5) h6 {
     color: white;
     font-size: 15px;
     margin: 10px 0px;
@@ -524,7 +535,7 @@ section:nth-of-type(5) h6 {
     
 }
 
-section:nth-of-type(5) article p {
+.home section:nth-of-type(5) article p {
     margin-top: 0px;
     margin-bottom: 14px;
     font-size: 15px;
@@ -532,16 +543,16 @@ section:nth-of-type(5) article p {
 
 /* Vormgeving van link */
 
-section:nth-of-type(5) article:nth-of-type(2) a,
-section:nth-of-type(5) article:nth-of-type(3) a {
+.home section:nth-of-type(5) article:nth-of-type(2) a,
+.home section:nth-of-type(5) article:nth-of-type(3) a {
     color: #00D4FF;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px
 }
 
-section:nth-of-type(5) article:nth-of-type(2) a:hover,
-section:nth-of-type(5) article:nth-of-type(3) a:hover {
+.home section:nth-of-type(5) article:nth-of-type(2) a:hover,
+.home section:nth-of-type(5) article:nth-of-type(3) a:hover {
     color: white;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
@@ -558,7 +569,7 @@ section:nth-of-type(5) article:nth-of-type(3) a:hover {
 */
 
 
-section:nth-of-type(5) article:nth-of-type(4) {
+.home section:nth-of-type(5) article:nth-of-type(4) {
     display: flex;
     background-color: #0D2E4F;
     border-radius: 10px;
@@ -567,32 +578,60 @@ section:nth-of-type(5) article:nth-of-type(4) {
     width: 100%;
 }
 
-section:nth-of-type(5) article:nth-of-type(4) ul,
-section:nth-of-type(5) article:nth-of-type(6) ul {
+.home section:nth-of-type(5) article:nth-of-type(4) ul,
+.home section:nth-of-type(5) article:nth-of-type(6) ul {
     list-style-type: none;
     padding-left: 0px;
     color: white;
 }
 
-section:nth-of-type(5) article:nth-of-type(4) main {
+.home section:nth-of-type(5) article:nth-of-type(4) main {
     border: none;
 }
 
-section:nth-of-type(5) article:nth-of-type(4) aside ul {
+.home section:nth-of-type(5) article:nth-of-type(4) aside ul {
     color: #55718D;
 }
 
-section:nth-of-type(5) article:nth-of-type(4) aside,
-section:nth-of-type(5) article:nth-of-type(4) main,
-section:nth-of-type(5) article:nth-of-type(6) {
+.home section:nth-of-type(5) article:nth-of-type(4) aside,
+.home section:nth-of-type(5) article:nth-of-type(4) main,
+.home section:nth-of-type(5) article:nth-of-type(6) {
     padding: 0px 0px 0px 25px;
     line-height: 1.6;
     font-family: 'courier';
     font-size: 15px;
 }
 
-section:nth-of-type(5) article:nth-of-type(4) main ul li:nth-of-type(4),
-section:nth-of-type(5) article:nth-of-type(4) main ul li:nth-of-type(5) {
+/* Bron: typen animatie: https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+.home section:nth-of-type(5) article:nth-of-type(4) main ul,
+.home section:nth-of-type(5) article:nth-of-type(6) ul {
+  overflow: hidden; /* Zorgt ervoor dat content verborgen blijft tot het typen */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  text-align: left;
+  margin-left: 0px;
+}
+
+/* Het effect van het typen */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* De cursor die de tekst schrijft */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #0D2E4F; }
+}
+
+.home section:nth-of-type(5) article:nth-of-type(6) ul  {
+    height: 50vw;
+}
+
+.home section:nth-of-type(5) article:nth-of-type(4) main ul li:nth-of-type(4),
+.home section:nth-of-type(5) article:nth-of-type(4) main ul li:nth-of-type(5) {
     margin-left: 17px
 }
 
@@ -626,7 +665,7 @@ section:nth-of-type(5) article:nth-of-type(4) main ul li:nth-of-type(5) {
 
 
 /* Opmaak van het tussenstukje tekst */
-section:nth-of-type(5) article:nth-of-type(5) {
+.home section:nth-of-type(5) article:nth-of-type(5) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -635,7 +674,7 @@ section:nth-of-type(5) article:nth-of-type(5) {
     width: 100%;
 }
 
-section:nth-of-type(5) article:nth-of-type(5) p {
+.home section:nth-of-type(5) article:nth-of-type(5) p {
     background-color: none;
     line-height: 1;
     margin-bottom: 0px;
@@ -644,7 +683,7 @@ section:nth-of-type(5) article:nth-of-type(5) p {
 
 /* Opmaak van de tweede code editor */
 
-section:nth-of-type(5) article:nth-of-type(6) {
+.home section:nth-of-type(5) article:nth-of-type(6) {
     background-color: #06182c;
     border: 1px solid #0D2E4F;
     border-radius: 10px;
@@ -652,7 +691,7 @@ section:nth-of-type(5) article:nth-of-type(6) {
     width: 100%;
 }
 
-section:nth-of-type(5) article:nth-of-type(6) main {
+.home section:nth-of-type(5) article:nth-of-type(6) main {
     border: none;
 }
 
@@ -663,7 +702,7 @@ section:nth-of-type(5) article:nth-of-type(6) main {
    ##############################################
 */
 
-section:nth-of-type(6) {
+.home section:nth-of-type(6) {
     margin-top: 110em;
     padding-left: 15px;
     display: inline-block;
@@ -671,20 +710,20 @@ section:nth-of-type(6) {
 
 /* Opmaak van de twee specificaties in deze sectie */
 
-section:nth-of-type(6) article {
+.home section:nth-of-type(6) article {
     display: flex;
     flex-direction: column;
     margin-top: 35px;
 }
 
-section:nth-of-type(6) article img {
+.home section:nth-of-type(6) article img {
     width: 40px;
     margin-bottom: 10px;
 }
 
 /* Vormgeving h6 met blauwe lijn links */
 
-section:nth-of-type(6) h6 {
+.home section:nth-of-type(6) h6 {
     color: #0A2540;
     font-size: 15px;
     margin: 10px 0px;
@@ -694,7 +733,7 @@ section:nth-of-type(6) h6 {
     left: -16px;
 }
 
-section:nth-of-type(6) article p {
+.home section:nth-of-type(6) article p {
     margin-top: 0px;
     margin-bottom: 14px;
     font-size: 15px;
@@ -702,14 +741,14 @@ section:nth-of-type(6) article p {
 
 /* Vormgeving van link */
 
-section:nth-of-type(6) article a {
+.home section:nth-of-type(6) article a {
     color: #635BFF;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px
 }
 
-section:nth-of-type(6) article a:hover {
+.home section:nth-of-type(6) article a:hover {
     color: black;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
@@ -724,92 +763,79 @@ section:nth-of-type(6) article a:hover {
    ##############################################
 */
 
-section:nth-of-type(7) {
+.home iframe {
+    margin-left: -4%;
+    z-index: -1;
+    margin-top: 10vh;
+}
+
+.home section:nth-of-type(7) {
     margin-bottom: 30px;
     padding-left: 3.5vw;
     padding-right: 3.5vw;
-    margin-top: 50px;
+    margin-top: -105vh;
     z-index: 5;
     position: relative;
     padding-top: 80px;
 }
 
-/* Het grote blauwe schuine achtergrondvlak */
-
-section:nth-of-type(7)::before {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 120vh;
-    max-height: 975px;
-    top: -2%;
-    left: -8%;
-    z-index:-1;
-    
-    /* Bron: https://www.w3schools.com/cssref/pr_background-image.asp */
-    background-image: url("https://eliaspoolman.github.io/blokweb/images/earth.png");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-}
-
 /* Opmaak h4, h2 en p in deze sectie */
 
-section:nth-of-type(7) h4 {
+.home section:nth-of-type(7) h4 {
     color: #00D4FF;
 }
 
-section:nth-of-type(7) h2 {
+.home section:nth-of-type(7) h2 {
     color: white;
     margin-bottom: 30px;
 }
 
-section:nth-of-type(7) p {
+.home section:nth-of-type(7) p {
     color: #adbdcc;
 }
 
-section:nth-of-type(7) a {
+.home section:nth-of-type(7) a {
     color: #00D4FF;
     font-weight: 500;
 }
 
-section:nth-of-type(7) a:hover {
+.home section:nth-of-type(7) a:hover {
     color: white;
 }
 
 /* Opmaak knop */
-section:nth-of-type(7) article:first-of-type div{
+.home section:nth-of-type(7) article:first-of-type div{
     background-color: #00D4FF;
     margin-top: 5px;
 }
 
-section:nth-of-type(7) article:first-of-type div:hover {
+.home section:nth-of-type(7) article:first-of-type div:hover {
     opacity: 1;
     background-color: white;
     
 }
 
-section:nth-of-type(7) article:first-of-type div a {
+.home section:nth-of-type(7) article:first-of-type div a {
     color: #0a2540;
 }
 
 /* Opmaak van de twee specificaties in deze sectie */
 
 
-section:nth-of-type(7) article:nth-of-type(2) img,
-section:nth-of-type(7) article:nth-of-type(3) img{
+.home section:nth-of-type(7) article:nth-of-type(2) img,
+.home section:nth-of-type(7) article:nth-of-type(3) img{
     width: 40px;
     margin-bottom: 10px;
 }
 
 /* Vormgeving h3 met blauwe lijn links */
 
-section:nth-of-type(7) article {
+.home section:nth-of-type(7) article {
     display: flex;
     flex-direction: column;
 }
 
-section:nth-of-type(7) h3 {
+.home section:nth-of-type(7) h3 {
     color: white;
     font-size: 25px;
     margin: 10px 0px;
@@ -819,7 +845,7 @@ section:nth-of-type(7) h3 {
     left: -3.5vw;    
 }
 
-section:nth-of-type(7) article p {
+.home section:nth-of-type(7) article p {
     margin-top: 0px;
     margin-bottom: 14px;
     font-size: 15px;
@@ -833,7 +859,7 @@ section:nth-of-type(7) article p {
    ##############################################
 */
 
-section:nth-of-type(8) {
+.home section:nth-of-type(8) {
     margin-top: 200px;
     margin-bottom: 150px;
     padding-left: 15px;
@@ -842,51 +868,51 @@ section:nth-of-type(8) {
 
 /* Opmaak van de twee specificaties in deze sectie */
 
-section:nth-of-type(8) article {
+.home section:nth-of-type(8) article {
     display: flex;
     flex-direction: column;
     margin-top: 35px;
 }
 
-section:nth-of-type(8) article:first-of-type {
+.home section:nth-of-type(8) article:first-of-type {
     display: flex;
     flex-direction: row;
 }
 
-section:nth-of-type(8) article:first-of-type div:first-of-type {
+.home section:nth-of-type(8) article:first-of-type div:first-of-type {
     background-color: #635BFF;
 }
 
-section:nth-of-type(8) article:first-of-type div:first-of-type:hover {
+.home section:nth-of-type(8) article:first-of-type div:first-of-type:hover {
     background-color: black;
     opacity: 1;
     color: white;
 }
 
-section:nth-of-type(8) article:first-of-type div:first-of-type a:hover {
+.home section:nth-of-type(8) article:first-of-type div:first-of-type a:hover {
     color: white;
 }
 
-section:nth-of-type(8) article:first-of-type div:last-of-type a {
+.home section:nth-of-type(8) article:first-of-type div:last-of-type a {
     color: #635BFF;
 }
 
-section:nth-of-type(8) article:first-of-type div:hover {
+.home section:nth-of-type(8) article:first-of-type div:hover {
     opacity: 1;
 }
 
-section:nth-of-type(8) article:first-of-type div:last-of-type a:hover {
+.home section:nth-of-type(8) article:first-of-type div:last-of-type a:hover {
     color: black;
 }
 
-section:nth-of-type(8) article img {
+.home section:nth-of-type(8) article img {
     width: 40px;
     margin-bottom: 10px;
 }
 
 /* Vormgeving h6 met blauwe lijn links */
 
-section:nth-of-type(8) h6 {
+.home section:nth-of-type(8) h6 {
     color: #0A2540;
     font-size: 15px;
     margin: 10px 0px;
@@ -896,7 +922,7 @@ section:nth-of-type(8) h6 {
     left: -16px;
 }
 
-section:nth-of-type(8) article p {
+.home section:nth-of-type(8) article p {
     margin-top: 0px;
     margin-bottom: 14px;
     font-size: 15px;
@@ -904,22 +930,22 @@ section:nth-of-type(8) article p {
 
 /* Vormgeving van link */
 
-section:nth-of-type(8) article a {
+.home section:nth-of-type(8) article a {
     color: #635BFF;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px
 }
 
-section:nth-of-type(8) p a {
+.home section:nth-of-type(8) p a {
         color: #635BFF;
     text-decoration: none;
     font-weight: 600;
     font-size: 18px
 }
 
-section:nth-of-type(8) article a:hover,
-section:nth-of-type(8) p a:hover {
+.home section:nth-of-type(8) article a:hover,
+.home section:nth-of-type(8) p a:hover {
     color: black;
 }
 
@@ -936,6 +962,11 @@ footer {
     padding-left: 25px;
 }
 
+.about footer {
+    background-color: #f6f9fc;
+    border-top: 2px solid rgba(207,215,223,.25);
+}
+
 footer img {
     width: 65px;
     margin-bottom: 5px;
@@ -948,7 +979,7 @@ footer > div:last-of-type {
     height: 750px;
 }
 
-footer > div::before {
+.home footer > div::before {
     content: "";
     position: absolute;
     width: 230%;
@@ -965,6 +996,10 @@ footer > div:first-of-type {
     padding-top: 120px;
     flex-direction: column;
     font-size: 15px;
+}
+
+.about footer > div:first-of-type {
+    padding-top: 60px;
 }
 
 /* Vormgeving van de talenswitcher */
@@ -1025,3 +1060,740 @@ footer p {
    ##############################################
 */
 
+.about {
+    grid-template-columns: 100vw;
+    
+}
+
+/* Afstand tekts van menu goedzetten */
+
+.about header section ul {
+    margin-left: 8vw;
+}
+
+.about > section {
+    display: relative !important;
+}
+
+/* Geen header achtergrond bij de about page */
+.about header::before  {
+    display: none;
+}
+
+/* ##############################################
+
+    Opmaak van Our Mission
+
+   ##############################################
+*/
+
+/* Stijl van h1 aanpassen */
+
+.about h1 {
+    font-weight: 400;
+    color: #32325D;
+    font-size: 45px !important;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-top: 80px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.about > section:nth-of-type(1) p {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.6;
+    color: #424770;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* De overgang goed weergeven */
+.about section:first-of-type img {
+    margin-left: -3.9vw;
+}
+
+/* ##############################################
+
+    Opmaak van The potential of the online economy
+
+   ##############################################
+*/
+
+.about section:nth-of-type(2) {
+    background-color: #f6f9fc;
+    margin-top: -1vh;
+    padding-top: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.about section:nth-of-type(2) h2 {
+    color: #32325D;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding-left: 0px;
+    font-size: 24px;
+}
+
+.about section:nth-of-type(2) p {
+    font-size: 19px;
+    font-weight: 300;
+    color: #525F7F;
+    line-height: 1.6;
+}
+
+.about section:nth-of-type(2) p span {
+    font-weight: 500;
+}
+
+.about section:nth-of-type(2) > p:last-of-type {
+    color: #AAB7C4;
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+
+/* De grafiek met schaduw */
+
+.about section:nth-of-type(2) img {
+    border-radius: 5px;
+    /* gegenereerd op https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+}
+
+/* Opmaak van de x-as */
+
+.about section:nth-of-type(2) ul:first-of-type {
+    display: flex;
+    flex-direction: row;
+}
+
+.about section:nth-of-type(2) ul:first-of-type li {
+    list-style-type: none;
+    color: #aab7c4;
+    font-size: 14px;
+    margin-left: 35px;
+    font-weight: 500;
+    margin-top: -14px;
+}
+
+/* Opmaak van de legenda van de grafiek */
+
+.about section:nth-of-type(2) ul:last-of-type {
+    padding-left: 4vw;
+    margin-bottom: 50px;
+}
+
+.about section:nth-of-type(2) ul:last-of-type li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about section:nth-of-type(2) ul:last-of-type li p {
+    color: #8898AA;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 0;
+}
+
+.about section:nth-of-type(2) ul:last-of-type li div {
+    width: 9px;
+    height: 9px;
+    margin-right: 6px;
+}
+
+.about section:nth-of-type(2) ul:last-of-type li:first-of-type div {
+    background-color: #5DC9FF;
+}
+
+.about section:nth-of-type(2) ul:last-of-type li:last-of-type div{
+    background-color: #5E6CFB;
+}
+
+/* ##############################################
+
+    Opmaak van The new payments stack
+
+   ##############################################
+*/
+
+.about section:nth-of-type(3) h2 {
+    font-weight: 400;
+    color: #32325D;
+    font-size: 30px !important;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-top: 60px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.about > section:nth-of-type(3) > p:first-of-type {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.6;
+    color: #424770;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 60px;
+}
+
+.about > section:nth-of-type(3) ul {
+    display: flex;
+    border-radius: 5px;
+    /* gegenereerd op https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 0px 24px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px -12px rgba(0,0,0,0.75);
+    padding: 10px;
+    margin: 15px;
+    margin-top: 45px;
+}
+
+.about > section:nth-of-type(3) ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 25px;
+    margin: 0px 5px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.about > section:nth-of-type(3) ul li p {
+    margin: 3px 5px 0px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.about > section:nth-of-type(3) ul li img {
+    width: 35px;
+}
+
+/* De kleuren van de achtergronden van de iconen */
+
+.about > section:nth-of-type(3) ul:first-of-type li:nth-of-type(1) {
+    background-color: #DB78DD;
+    flex-grow: 2;
+}
+
+.about > section:nth-of-type(3) ul:first-of-type li:nth-of-type(2) {
+    background-color: #A688D7;
+    flex-grow: 2;
+}
+
+.about > section:nth-of-type(3) ul:first-of-type li:nth-of-type(3) {
+    background-color: #3ECF8E;
+    flex-grow: 2;
+}
+
+.about > section:nth-of-type(3) ul:first-of-type li:nth-of-type(4) {
+    background-color: #F0B64B;
+    flex-grow: 2;
+}
+
+/* De kleuren van de tweede rij iconen */
+.about > section:nth-of-type(3) ul:last-of-type li:nth-of-type(1) {
+    background-color: #818BF0;
+    flex-grow: 2;
+}
+
+.about > section:nth-of-type(3) ul:last-of-type li:nth-of-type(2) {
+    background-color: #45B2E8;
+    flex-grow: 2;
+}
+
+/* De opmaak van de tussentekstjes */
+
+.about > section:nth-of-type(3) article {
+    padding: 0vw 6vw;
+}
+
+.about > section:nth-of-type(3) article h4 {
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    color: #32325D;
+    margin-bottom: 0px;
+}
+
+.about > section:nth-of-type(3) article p {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #525F7F;
+    margin-top: 10px;
+}
+
+.about > section:nth-of-type(3) article:last-of-type {
+    margin-bottom: 80px;
+}
+
+/* De afbeelding van het sjabloon */
+.about > section:nth-of-type(3) > img {
+    /* gegenereerd op https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 0px 24px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px -12px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+
+/* ##############################################
+
+    Opmaak van Solutions rooted in code design
+
+   ##############################################
+*/
+
+.about > section:nth-of-type(4) {
+    background-color: #f6f9fc;
+    margin-bottom: 0px !important;
+    border-bottom: none;
+    padding-bottom: 0px !important;
+}
+
+.about section:nth-of-type(4) h2 {
+    font-weight: 400;
+    color: #32325D;
+    font-size: 30px !important;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-top: 80px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.about > section:nth-of-type(4) > p:first-of-type {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.6;
+    color: #424770;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 30px;
+}
+
+.about > section:nth-of-type(4) article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.about > section:nth-of-type(4) article h6 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0px;
+    color: #32325D;
+}
+
+.about > section:nth-of-type(4) article p {
+    font-weight: 300;
+    color: #525F7F;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 7px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
+
+.about > section:nth-of-type(4) article a {
+    font-weight: 400;
+    color: #6772E5;
+}
+
+.about > section:nth-of-type(4) article a:hover {
+    color: black;
+}
+
+.about > section:nth-of-type(4) article img {
+    height: 40px;
+    margin-right: 14px;
+    margin-left: 12px;
+}
+
+/* Opmaak van Engineering at scale */
+
+.about > section:nth-of-type(4) article:last-of-type {
+    /* gegenereerd op https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 50px;
+    z-index: 5 !important;
+    margin-bottom: 45px
+}
+
+.about > section:nth-of-type(4) article:last-of-type img {
+    margin: 0;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.about > section:nth-of-type(4) article:last-of-type h6 {
+    margin: 25px 20px 25px 30px;
+    font-weight: 300;
+}
+
+.about > section:nth-of-type(4) article:last-of-type p {
+    margin: 0px 20px 20px 30px;
+}
+
+.about > section:nth-of-type(4) article:last-of-type p span {
+    font-style: italic;
+}
+
+.about > section:nth-of-type(4) article:last-of-type div {
+    background-color: #6772E5;
+    margin: 15px 20px 30px 30px;
+    border-radius: 5px;
+    display: flex;
+    min-width: 150px;
+    width: 165px;    
+}
+
+.about > section:nth-of-type(4) article:last-of-type div:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.about > section:nth-of-type(4) article:last-of-type a {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+/* Overgangsafbeeldingen */
+
+.about > section:nth-of-type(4) > img:last-of-type {
+    z-index: -5 !important;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+/* ##############################################
+
+    Opmaak van Removing financial complexity
+
+   ##############################################
+*/
+
+.about > section:nth-of-type(5) {
+
+}
+
+.about > section:nth-of-type(5) iframe {
+    margin-left: -14%;
+    z-index: -1;
+    margin-top: 0vh;
+}
+
+.about section:nth-of-type(5) h2 {
+    font-weight: 400;
+    color: #32325D;
+    font-size: 30px !important;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-top: 30px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.about > section:nth-of-type(5) > p:first-of-type {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.6;
+    color: #424770;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 20px;
+}
+
+/* ##############################################
+
+    Opmaak van From startups to the world's 
+
+   ##############################################
+*/
+
+.about > section:nth-of-type(6) {
+    background-color: #f6f9fc;
+    text-align: center;
+}
+
+.about > section:nth-of-type(6) img {
+    width: 84%;
+    margin-top: 25px;
+}
+
+.about section:nth-of-type(6) h2 {
+    font-weight: 400;
+    color: #32325D;
+    font-size: 30px !important;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-top: 60px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.about > section:nth-of-type(6) > p:first-of-type {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.6;
+    color: #424770;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 20px;
+}
+
+.about > section:nth-of-type(6) article {
+    margin: 50px 20px 60px 20px;
+    border-radius: 5px;
+    border: 2px solid #e6ebf1;
+    padding: 15px 30px;
+    text-align: left;
+}
+
+.about > section:nth-of-type(6) article p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.about > section:nth-of-type(6) article p a:hover {
+    color: black;
+}
+
+.about > section:nth-of-type(6) article p span:first-of-type {
+    font-weight: 300;
+}
+
+.about > section:nth-of-type(6) article p span:last-of-type {
+    color: #6772E5;
+}
+
+/* ##############################################
+
+    Opmaak van Headquarters
+
+   ##############################################
+*/
+
+.about section:nth-of-type(7) h2 {
+    font-weight: 300;
+    color: #32325D;
+    font-size: 27px !important;
+    text-align: left;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-top: 80px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.about section:nth-of-type(7) ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 5vw;
+    padding-right: 2vw;
+}
+
+.about section:nth-of-type(7) ul li {
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.about section:nth-of-type(7) ul li h4 {
+    color: #3292DF;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.about section:nth-of-type(7) ul li p {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #525F7F;
+}
+
+/* ##############################################
+
+    Opmaak van de twee grote knoppen
+
+   ##############################################
+*/
+
+.about section:nth-of-type(8)  {
+    background-color: #f6f9fc;
+    padding-bottom: 25px;
+}
+
+.about section:nth-of-type(8) article {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px 30px 0px;
+    /* gegenereerd op https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 50px -19px rgba(0,0,0,0.75);
+}
+
+.about section:nth-of-type(8) article img {
+    object-fit: cover;
+    align-self: center;
+    margin-right: 20px;
+}
+
+.about section:nth-of-type(8) article p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #525f7f;
+}
+
+.about section:nth-of-type(8) article h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0px !important;
+}
+
+.about section:nth-of-type(8) article:first-of-type h3 {
+    color: #6772e5;
+}
+
+.about section:nth-of-type(8) article:last-of-type h3 {
+    color: #24b47e
+}
+
+.about section:nth-of-type(8) article div {
+    
+}
+
+.about section:nth-of-type(8) article:hover {
+    transform: translateY(-5px);
+    
+    /* Bron zwart-wit maken: https://www.w3schools.com/howto/howto_css_image_bw.asp */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/* ##############################################
+
+    Opmaak van de het email formulier
+
+   ##############################################
+*/
+
+.about section:nth-of-type(9) {
+    background-color: #f6f9fc;
+    margin-top: 0px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.about section:nth-of-type(9) h2 {
+    font-weight: 400;
+    color: #32325D;
+    font-size: 28px !important;
+    text-align: left;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-bottom: 0px;
+}
+
+.about section:nth-of-type(9) p {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #525f7f;
+}
+
+.about section:nth-of-type(9) > p:last-of-type {
+    font-size: 13.5px;
+    color: #8898aa;
+}
+
+.about section:nth-of-type(9) > p:last-of-type a {
+    color: #6772e5;
+    font-weight: 500;
+}
+
+/* Opmaak van het formulier */
+
+.about section:nth-of-type(9) form {
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+    -webkit-box-shadow: 0 2px 5px -1px rgba(50,50,93,.25), 0 1px 3px -1px rgba(0,0,0,.3);
+    box-shadow: 0 2px 5px -1px rgba(50,50,93,.25), 0 1px 3px -1px rgba(0,0,0,.3);
+    border-radius: 10px;
+}
+
+.about section:nth-of-type(9) form input:first-of-type {
+    flex-grow: 2;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    color: #C3CAD4;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.about section:nth-of-type(9) form input:first-of-type:focus {
+    color: black;
+}
+
+.about section:nth-of-type(9) form input:last-of-type {
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    border-left: 2px solid #f6f9fc;
+    color: #6772e5;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+
+.about section:nth-of-type(9) form input:last-of-type:hover {
+    opacity: 0.7;
+}
+
+.about section:nth-of-type(9) form input:last-of-type:focus {
+    background-color: #f6f9fc;
+    color: darkmagenta;
+}
